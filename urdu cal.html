@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="https://pbs.twimg.com/profile_images/1488500192001380360/aksWsFGr_400x400.jpg">
+    <title>Urdu Calculator</title>
+</head>
+<body>
+    <script>
+            
+        function cash(Zakat)
+        {
+            var cash1 = parseFloat(document.getElementById('cash1').value);
+            
+            
+            
+            
+                document.getElementById('output1').value = cash1*2.5/100;
+            
+            
+            }
+            function property(Zakat)
+        {
+            var p1 = parseFloat(document.getElementById('p1').value);
+            var p2 = parseFloat(document.getElementById('p2').value);
+            
+            document.getElementById('tp').value = p1*p2;
+                document.getElementById('p3').value = p1*p2*2.5/100;
+                
+            }
+            function gold(Zakat)
+        {
+            var g1 = parseFloat(document.getElementById('g1').value);
+            var g2 = parseFloat(document.getElementById('g2').value);
+            
+            document.getElementById('gp').value = g1*g2;
+                document.getElementById('g3').value = g1*g2*2.5/100;
+                
+            }
+        
+    </script>
+
+
+
+
+    <center>
+<div class="cal">
+       
+<h1>اردو زکوٰۃ کیلکولیٹر</h1>
+
+</div>
+<hr>
+<div class="cashzakaat">
+<h1>رقم پر زکوٰۃ</h1>
+<span>کیش درج کریں۔</span>
+<input type="number" value="Total Cash" id="cash1" class="cash">
+<br>
+<button onclick="cash();" class="cash">زکوٰۃ کے لیے بٹن دبائیں</button>
+<br>
+<span>رقم پر آپ کی زکوٰۃ</span>
+<input type="number" value="Your Zakat:" id="output1" class="output">
+<br><br>
+</div>
+
+<hr>
+<div class="property">
+
+    <h1>جائیداد کی زکوٰۃ</h1>
+    <span>مرلہ میں کل پراپرٹی درج کریں۔</span>
+    <input type="number" id="p1" value="Total Property in Marla" class="property"> <br> <br>
+    <span>ایک (1) مرلہ کی قیمت درج کریں۔</span>
+    <input type="number" id="p2" value="Price of 1 Marla"> <br>
+    <button onclick="property();" class="propertybtn">زکوٰۃ کے لیے بٹن دبائیں</button> <br>
+<span>کل جائیداد کی قیمت (خودکار حساب)</span>
+    <input type="text" id="tp" value="کل جائیداد کی قیمت (خودکار حساب)">
+    <br>
+     <br>
+    <span>آپ کی جائیداد کی زکوٰۃ</span>
+    <input type="number" id="p3" value="آپ کی جائیداد کی زکوٰۃ" class="poutput">
+    <br><br>
+</div>
+<hr>
+<div class="gold">
+<h1>سونے پر زکوٰۃ</h1>
+<span>تولہ میں کل سونا درج کریں۔</span>
+    <input type="number" id="g1" value="تولہ میں کل سونا درج کریں۔ " class="gold"> <br>
+    <br>
+    <span>ایک (1) تولہ کی قیمت درج کریں۔</span>
+    <input type="number" id="g2" value="ایک (1) تولہ کی قیمت درج کریں۔"> <br>
+    <button onclick="gold();" class="goldbtn">زکوٰۃ کے لیے بٹن دبائیں</button> <br>
+    <span>سونے کی کل قیمت (خودکار حساب)</span>
+    <input type="text" id="gp" value="سونے کی کل قیمت (خودکار حساب)">
+     <br><br>
+    <span>سونے پر آپ کی زکوٰۃ</span>
+    <input type="number" id="g3" value="سونے پر آپ کی زکوٰۃ" class="goutput">
+    <br><br>
+
+
+</div>
+<br><br><br>
+
+<span class="dd">ڈیزائن اور تیار کردہ<br><br> <a href="https://www.youtube.com/c/hitechumair">ہائی ٹیک عمیر</a></span>
+<br><br><br>
+    </center>
+    <br><br><br>
+    <style>
+        body{
+            background-color: rgb(48, 46, 46);
+            color: white;
+            
+        }
+        .cashzakaat{
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/cash\ back.jpg');
+        backdrop-filter: blur(200px);
+       
+                background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+           
+            
+        }
+        .property{
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(property\ back.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .gold{
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(gold\ back.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+        .cal{
+            background-color: ;
+            color: yellow;
+            opacity: 1;
+        }
+        input{
+            opacity: 1;
+            margin-top:20px ;
+            margin-bottom: 20;
+            font-size: 20px;
+            border-radius:black;
+            background-color: white;
+            color: black;
+           
+        }
+        button{
+            opacity: 1;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 25px;
+            background-color: black;
+            color: white;
+            border-color: yellow;
+            border-style: ridge;
+        }
+        button:hover{
+            opacity: 1;
+            background-color: black;
+            color: white;
+            border-color: black;
+            border-style: ridge;
+        }
+        span {
+            opacity: 1;
+            font-size: x-large;
+        }
+        .dd{
+            opacity: 1;
+            color: white;
+            
+        }
+        .dd a{
+            opacity: 1;
+            text-decoration: none;
+            color: yellow;
+            border-color: white;
+        border-style: ridge;
+        align-items: right;
+        }
+        .author{
+            background-color: white;
+            border-radius: 50%;
+        }
+        .author img{
+            border-style: dotted;
+            border-color: white;
+        }
+        .author:hover{
+            background-color: yellow;
+        }
+        .author img:hover{
+            border-color: yellow;
+            border-style: dashed;
+        }
+        </style>
+        
+
+
+
+</body>
+</html>

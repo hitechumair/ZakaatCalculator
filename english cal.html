@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript"> 
+        function disableselect(e){  
+        return false  
+        }  
+        
+        function reEnable(){  
+        return true  
+        }  
+        
+        //if IE4+  
+        document.onselectstart=new Function ("return false")  
+        document.oncontextmenu=new Function ("return false")  
+        //if NS6  
+        if (window.sidebar){  
+        document.onmousedown=disableselect  
+        document.onclick=reEnable  
+        }
+        </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="https://pbs.twimg.com/profile_images/1488500192001380360/aksWsFGr_400x400.jpg">
+    <title>English Calculator</title>
+</head>
+<body>
+    <br>
+  
+   
+   <script>
+            
+        function cash(Zakat)
+        {
+            var cash1 = parseFloat(document.getElementById('cash1').value);
+            
+            
+            
+            
+                document.getElementById('output1').value = cash1*2.5/100;
+            
+            
+            }
+            function property(Zakat)
+        {
+            var p1 = parseFloat(document.getElementById('p1').value);
+            var p2 = parseFloat(document.getElementById('p2').value);
+            
+            document.getElementById('tp').value = p1*p2;
+                document.getElementById('p3').value = p1*p2*2.5/100;
+                
+            }
+            function gold(Zakat)
+        {
+            var g1 = parseFloat(document.getElementById('g1').value);
+            var g2 = parseFloat(document.getElementById('g2').value);
+            
+            document.getElementById('gp').value = g1*g2;
+              document.getElementById('g3').value = g1*g2*2.5/100;
+                
+            }
+        
+    </script>
+
+
+
+
+    <center>
+<div class="cal">
+<h1>Zakaat Calculator</h1>
+</div>
+
+<a class="author" >
+    <img style="border-radius: 50%; width: 115px;" src="https://pbs.twimg.com/profile_images/1488500192001380360/aksWsFGr_400x400.jpg" alt="">
+</a>
+<center>
+<span>Find Your Zakaat Easily:</span>
+    
+    </center> 
+
+
+
+
+
+<hr> 
+<div class="cashzakaat"> <br>
+<h1>Zakaat on Cash:</h1>
+<span>Enter Total Cash</span> <br>
+<input type="number" value="Total Cash" id="cash1" class="cash">
+<br>
+<button onclick="cash();" class="cash">Calculate</button>
+<br>
+<span>Your Zakaat</span><br>
+<input type="number" value="Your Zakat:" id="output1" class="output">
+<br><br>
+</div>
+
+<hr>
+<div class="property">
+
+    <h1>Zakaat on Property:</h1>
+    <span>Enter Total Property in Marla:</span><br>
+    <input type="number" id="p1" value="Total Property in Marla" class="propert"> <br> <br>
+    <span>Enter Price of One(1) Marla</span><br>
+    <input type="number" id="p2" value="Price of 1 Marla"> <br>
+    <button  onclick="property();" class="propert">Calculate</button> <br>
+<span>Total Property Price:</span><br>
+    <input type="text" id="tp" value="Total property Price(Auto)">
+    <br>
+     <br>
+    <span>Your Zakaat on Property:</span><br>
+    <input type="number" id="p3" value="Your Zakat on Property:" class="poutput">
+<br><br>
+</div>
+<hr>
+<div class="gold"> <br>
+<h1>Zakaat on Gold:</h1>
+<span>Total Gold in Tolla:</span><br>
+    <input type="number" id="g1" value="Total Gold in Tolla " class="gol"> <br>
+    <br>
+    <span>Enter Price of One(1) Tolla:</span><br>
+    <input type="number" id="g2" value="Price of 1 Tolla"> <br>
+    <button onclick="gold();" class="gol">Calculate</button> <br>
+    <span>Total Gold Price:</span><br>
+    <input type="text" id="gp" value="Total Gold Price(Auto)">
+     <br><br>
+    <span>Your Zakat on Gold:</span><br>
+    <input type="number" id="g3" value="Your Zakat on Gold:" class="goutput">
+
+
+<br>
+<br>
+</div>
+<hr>
+<br><br>
+
+<span class="dd">Design & Developed By: <br> <br> <a href="about.html">Hi-Tech Umair</a></span>
+<br><br><br>
+    </center>
+<style>
+body{
+    background-color: rgb(48, 46, 46);
+    color: white;
+    
+}
+.cashzakaat{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/cash\ back.jpg');
+
+background-blend-mode: color-burn;
+
+        background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+.property{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(property\ back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+}
+.gold{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(gold\ back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.cal{
+    background-color: ;
+    color: yellow;
+    opacity: 1;
+}
+input{
+    opacity: 1;
+    margin-top:20px ;
+    margin-bottom: 20;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+button{
+    opacity: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    border-color: yellow;
+    border-style: ridge;
+}
+button:hover{
+    opacity: 1;
+    background-color: black;
+    color: white;
+    border-color: black;
+    border-style: ridge;
+}
+span {
+    opacity: 1;
+    font-size: x-large;
+}
+.dd{
+    opacity: 1;
+    color: white;
+    
+}
+.dd a{
+    opacity: 1;
+    text-decoration: none;
+    color: yellow;
+    border-color: white;
+border-style: ridge;
+align-items: right;
+}
+.author{
+    background-color: white;
+    border-radius: 50%;
+}
+.author img{
+    border-style: dotted;
+    border-color: white;
+}
+.author:hover{
+    background-color: yellow;
+}
+.author img:hover{
+    border-color: yellow;
+    border-style: dashed;
+}
+</style>
+
+
+
+
+</body>
+</html>
